@@ -8,13 +8,10 @@
 2- MUD DE END REPROVADA:           503
 3- MUD DE TECNOLOGIA:              493
 3- MUD TEC REPROVADA:              507
-4- SEM ACESSO:                     391
 4- ORD SER. REPROVADA:             382
 5- REATIVAÇÃO DE CLIENTE:          628
 6- SERVIÇO TÉCNICO:                588
 6- SERVIÇO TECNICO REPROV:         592
 7- PONTO AD. TV:                   554
 7- PONTO AD. TV REPROVADA:         540
-
 """
-

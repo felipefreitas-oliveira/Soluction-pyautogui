@@ -8,9 +8,3 @@ from tkinter import Tk
 # a = pyautogui.position()
 #
 # print(a)
-
-root = Tk()
-root.withdraw()  # Oculta a janela principal do Tkinter
-root.clipboard_clear()
-root.destroy()  # Destroi a janela do Tkinter
-
