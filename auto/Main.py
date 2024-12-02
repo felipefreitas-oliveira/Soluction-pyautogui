@@ -1,4 +1,10 @@
-import Distribuction
+import Dist3
+import Dist2
 
 n = int(input("Quantas OS? "))
-Distribuction.distribuicao(n)
+
+#Tela Notebook
+#Dist2.distribuicao(n)
+
+#Tela Mancer
+Dist3.distribuicao(n)
