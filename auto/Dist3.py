@@ -5,7 +5,7 @@ from tkinter import Tk
 #Zoom 100%, Chrome
 #Tela notebook
 
-city = {1288: 86, 1429: 99, 1274: 97, 1249: 122, 1270: 98, 910: 101, 1272: 103, 1295: 104,
+city = {1288: 86, 1283: 86, 1429: 99, 1274: 97, 1249: 122, 1270: 98, 910: 101, 1272: 103, 1295: 104,
         1300: 105, 1331: 98, 969: 106, 1355: 107, 1363: 108, 1390: 109, 1410: 111, 1409: 110,
         1458: 115, 1067: 116, 909: 128, 1426: 113, 1443: 114, 1276: 98}
 
@@ -15,9 +15,9 @@ def distribuicao(n):
     i = 1
 
     while i <= n:
-        time.sleep(2)
+        time.sleep(3)
         pyautogui.doubleClick(x=784, y=253)
-        time.sleep(4)
+        time.sleep(5)
         pyautogui.click(x=525, y=397)
         time.sleep(1)
 
@@ -65,7 +65,7 @@ def distribuicao(n):
                     if idAssunto == topic[j]:
                         pyautogui.write(str('98'))
                         pyautogui.click(x=669, y=340)
-                        time.sleep(0.5)
+                        time.sleep(1)
                         pyautogui.write('REALIZAR SERVICO.')
                         time.sleep(0.5)
                         pyautogui.click(x=151, y=163)
@@ -77,7 +77,7 @@ def distribuicao(n):
 
                 pyautogui.write(str(destino))
                 pyautogui.click(x=669, y=340)
-                time.sleep(0.5)
+                time.sleep(1)
                 pyautogui.write('REALIZAR SERVICO.')
                 time.sleep(0.5)
                 pyautogui.click(x=151, y=163)

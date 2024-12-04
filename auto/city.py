@@ -1,5 +1,6 @@
 """Cidades:
 Cajazeiras                  1288: 86
+Cachoeira dos Indios        1283: 86
 Itaporanga                  1331: 98
 São José de Piranhas        1429: 99
 Bonito de Santa Fé          1274: 97
@@ -20,5 +21,5 @@ Serra Grande                1443: 114
 Triunfo                     1458: 115
 Umari                       1067: 116
 Aurora                      909: 128
-Igaracy                     1276:
+Igaracy                     1276: 98
 """
