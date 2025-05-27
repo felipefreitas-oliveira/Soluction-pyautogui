@@ -5,3 +5,4 @@ from tkinter import Tk
 a = pyautogui.position()
 
 print(a)
+

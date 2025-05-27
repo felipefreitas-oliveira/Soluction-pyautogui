@@ -16,10 +16,10 @@ def distribuicao(n):
 
     while i <= n:
         time.sleep(2)
-        pyautogui.doubleClick(x=996, y=271)
-        time.sleep(4)
-        pyautogui.click(x=526, y=428)
-        time.sleep(1)
+        pyautogui.doubleClick(x=882, y=252)
+        time.sleep(2)
+        pyautogui.click(x=522, y=394)
+        time.sleep(0.5)
 
         pyautogui.hotkey('ctrl', 'a')
         pyautogui.hotkey('ctrl', 'c')
@@ -35,7 +35,7 @@ def distribuicao(n):
             break
 
         time.sleep(1)
-        pyautogui.click(x=262, y=218)
+        pyautogui.click(x=233, y=204)
         time.sleep(1)
         pyautogui.hotkey('ctrl', 'a')
         pyautogui.hotkey('ctrl', 'c')
@@ -46,11 +46,13 @@ def distribuicao(n):
         root.destroy()
         idCidade = int(idCidade)
 
-        pyautogui.click(x=726, y=164)
+        pyautogui.click(x=488, y=159)
         time.sleep(1)
-        pyautogui.click(x=741, y=228)
+        pyautogui.click(x=491, y=216)
         time.sleep(1)
-        pyautogui.click(x=542, y=235)
+        pyautogui.click(x=501, y=219)
+        time.sleep(0.5)
+        pyautogui.click(x=530, y=254)
         pyautogui.hotkey('ctrl', 'a')
 
         for cidade, destino in city.items():
@@ -64,28 +66,28 @@ def distribuicao(n):
                 for j in range(len(topic)):
                     if idAssunto == topic[j]:
                         pyautogui.write(str('98'))
-                        pyautogui.click(x=669, y=376)
+                        pyautogui.click(x=550, y=373)
                         time.sleep(0.5)
                         pyautogui.write('REALIZAR SERVICO.')
                         time.sleep(0.5)
-                        pyautogui.click(x=162, y=176)
-                        time.sleep(2)
+                        pyautogui.click(x=175, y=160)
+                        time.sleep(1)
                         idCidade = 0
                         break
 
             if idCidade == cidade:
 
                 pyautogui.write(str(destino))
-                pyautogui.click(x=669, y=376)
+                pyautogui.click(x=550, y=373)
                 time.sleep(0.5)
                 pyautogui.write('REALIZAR SERVICO.')
                 time.sleep(0.5)
-                pyautogui.click(x=162, y=176)
-                time.sleep(2)
+                pyautogui.click(x=175, y=160)
+                time.sleep(1)
                 idCidade = 0
 
-        pyautogui.click(x=1811, y=133)
-        time.sleep(9)
+        pyautogui.click(x=1813, y=129)
+        time.sleep(1)
 
         i += 1
 
