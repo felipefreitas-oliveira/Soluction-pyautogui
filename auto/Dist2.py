@@ -2,9 +2,6 @@ import pyautogui
 import time
 from tkinter import Tk
 
-#Zoom 100%, Chrome
-#Tela notebook
-
 city = {1288: 86, 1283: 86, 1429: 99, 1274: 97, 1249: 122, 1270: 98, 910: 101, 1272: 103, 1295: 104,
         1300: 105, 1331: 98, 969: 106, 1355: 107, 1363: 108, 1390: 109, 1410: 111, 1409: 110,
         1458: 115, 1067: 116, 909: 128, 1426: 113, 1443: 114, 1276: 98}
@@ -15,9 +12,10 @@ def distribuicao(n):
     i = 1
 
     while i <= n:
+        print(i)
         time.sleep(2)
         pyautogui.doubleClick(x=882, y=252)
-        time.sleep(2)
+        time.sleep(3)
         pyautogui.click(x=522, y=394)
         time.sleep(0.5)
 
