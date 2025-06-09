@@ -55,49 +55,59 @@ def atualizarLista():
     pyautogui.click(x=759, y=275)
 
 
-time.sleep(0.5)
-pyautogui.click(x=839, y=501)
-time.sleep(3)
-pyautogui.click(x=839, y=208)
-time.sleep(1)
-pyautogui.click(x=155, y=272)
-time.sleep(2)
-pyautogui.click(x=521, y=511)
-pyautogui.write(str('198'))
-pyautogui.scroll(-500)
-time.sleep(1)
-pyautogui.click(x=628, y=690)
-time.sleep(2)
-pyautogui.hotkey('ctrl', 'a')
-time.sleep(0.5)
-pyautogui.press('delete')
+def openatt(n):
+    i = 1
+    vertical = 260
 
-pyautogui.write('>>TIPO DE ALTERAÇÃO: TROCA DE EQUIPAMENTO \n'
-                'REALIZA SERVIÇO TÉCNICO: (   ) SIM | ( x  ) NÃO\n'
-                '.\n'
-                '>> EXISTE EQUIPAMENTOS EM COMODATO? (x ) SIM | (  ) NÃO\n'
-                '>> HAVERÁ TROCA DE EQUIPAMENTO EM COMODATO?  (x ) SIM | (  ) NÃO\n'
-                '- MODELOS: REALIZAR A SUBSTITUIÇÃO DE ONU E ROTEADOR PARA ONT HUAWEI DEVIDO A TROCA DE ROTAS (EPON PARA GPON).')
-time.sleep(0.5)
-pyautogui.click(x=232, y=167)
-time.sleep(1)
-pyautogui.click(x=815, y=214)
-time.sleep(1)
+    while i <= n:
+        pyautogui.doubleClick(x=884, y=vertical)
+        vertical += 27
 
-####
-fecharOsNormal()
-####
-atualizarLista()
-####
-fecharOsNormal()
-####
-atualizarLista()
-####
-fecharOsAudit()
-####
-time.sleep(0.5)
-pyautogui.click(x=1820, y=136)
-time.sleep(0.2)
-pyautogui.click(x=1818, y=131)
-time.sleep(0.2)
-pyautogui.click(x=1813, y=128)
+        time.sleep(3)
+        pyautogui.click(x=839, y=501)
+        time.sleep(3)
+        pyautogui.click(x=839, y=208)
+        time.sleep(1)
+        pyautogui.click(x=155, y=272)
+        time.sleep(2)
+        pyautogui.click(x=521, y=511)
+        pyautogui.write(str('198'))
+        pyautogui.scroll(-500)
+        time.sleep(1)
+        pyautogui.click(x=628, y=690)
+        time.sleep(2)
+        pyautogui.hotkey('ctrl', 'a')
+        time.sleep(0.5)
+        pyautogui.press('delete')
+
+        pyautogui.write('>>TIPO DE ALTERAÇÃO: TROCA DE EQUIPAMENTO \n'
+                        'REALIZA SERVIÇO TÉCNICO: (   ) SIM | ( x  ) NÃO\n'
+                        '.\n'
+                        '>> EXISTE EQUIPAMENTOS EM COMODATO? (x ) SIM | (  ) NÃO\n'
+                        '>> HAVERÁ TROCA DE EQUIPAMENTO EM COMODATO?  (x ) SIM | (  ) NÃO\n'
+                        '- MODELOS: REALIZAR A SUBSTITUIÇÃO DE ONU E ROTEADOR PARA ONT HUAWEI DEVIDO A TROCA DE ROTAS (EPON PARA GPON).')
+        time.sleep(0.5)
+        # pyautogui.click(x=232, y=167)
+        # time.sleep(1)
+        # pyautogui.click(x=815, y=214)
+        # time.sleep(1)
+        #
+        # ####
+        # fecharOsNormal()
+        # ####
+        # atualizarLista()
+        # ####
+        # fecharOsNormal()
+        # ####
+        # atualizarLista()
+        # ####
+        # fecharOsAudit()
+        # ####
+        # time.sleep(0.5)
+        # pyautogui.click(x=1820, y=136)
+        # time.sleep(0.2)
+        # pyautogui.click(x=1818, y=131)
+        # time.sleep(0.2)
+        # pyautogui.click(x=1813, y=128)
+
+        i += 1
